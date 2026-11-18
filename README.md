@@ -2,12 +2,10 @@
 
 **让 Office 的 Ctrl+V 更聪明：将 LaTeX 数学公式自动转换为可编辑的 Office 原生公式。**
 
-<div align="center">
-  <img alt="Windows x64" src="https://img.shields.io/badge/Windows-x64-0078D4">
-  <img alt="Office 2016 + 2021" src="https://img.shields.io/badge/Office-2016%20%7C%202021-D83B01">
-  <img alt="版本 Turbo" src="https://img.shields.io/badge/版本-Turbo-22863A">
-  <img alt="技术 C# 与 Python" src="https://img.shields.io/badge/技术-C%23%20%2B%20Python-512BD4">
-</div>
+![Windows x64](https://img.shields.io/badge/Windows-x64-0078D4)
+![Office 2016 + 2021](https://img.shields.io/badge/Office-2016%20%7C%202021-D83B01)
+![Turbo](https://img.shields.io/badge/版本-Turbo-22863A)
+![C# + Python](https://img.shields.io/badge/技术-C%23%20%2B%20Python-512BD4)
 
 > [!IMPORTANT]
 > **项目目前处于快速迭代阶段！**
@@ -15,10 +13,13 @@
 > 如需使用，请务必前往 GitHub 仓库下载最新的 ZIP 安装包，以获取最新修复与功能更新。
 >
 > **请特别注意 Office 版本区分：**
+>
 > - Office 2016：下载 Office 2016 对应版本。
 > - Office 2021：下载 Office 2021 对应版本。
 >
-> 不同 Office 版本的修复文件请勿混用。建议每次使用前检查仓库中的最新发布版本。
+> 不同 Office 版本的修复文件请勿混用。建议每次使用前检查仓库中的最新版本。
+
+---
 
 ## 项目介绍
 
@@ -32,13 +33,13 @@
 
 特别感谢我的好兄弟 **牢安**，帮助完成了 Office 2021 的适配工作。仓库中已经提供对应的 Office 2021 修复版本，欢迎使用和反馈！
 
-> **版本说明**
->
-> - Office 2016：原始适配版本。
-> - Office 2021：由牢安协助完成适配，仓库提供对应修复版本。
-> - 两个版本的 Office 内部组件和安装环境可能存在差异，请根据自己的 Office 版本选择对应安装包。
->
-> 本人日常使用 Microsoft Office 专业增强版 2016。Word 和 PowerPoint 的常规复制粘贴已在本机测试通过。Office 2021 适配版本也已纳入项目，欢迎反馈实际使用情况。
+### 版本说明
+
+- **Office 2016**：原始适配版本。
+- **Office 2021**：由牢安协助完成适配，仓库提供对应修复版本。
+- 两个版本的 Office 内部组件和安装环境可能存在差异，请根据自己的 Office 版本选择对应安装包。
+
+本人日常使用 Microsoft Office 专业增强版 2016。Word 和 PowerPoint 的常规复制粘贴已在本机测试通过。Office 2021 适配版本也已纳入项目，欢迎反馈实际使用情况。
 
 ## 目录
 
@@ -67,15 +68,15 @@
 
 ## 运行环境
 
-| 项目     | 要求或验证情况                      |
-| ------ | ---------------------------- |
-| 操作系统   | 64 位 Windows                 |
+| 项目 | 要求或验证情况 |
+| --- | --- |
+| 操作系统 | 64 位 Windows |
 | Office | Microsoft Office 2016 / 2021 |
-| 目标应用   | Windows 桌面版 Word、PowerPoint  |
-| 转换组件   | 本机 Office 的 `MML2OMML.XSL`   |
-| .NET   | .NET Framework 4.x           |
-| 安装权限   | 当前用户权限，通常无需管理员权限             |
-| Python | 安装包内置 x64 Python 运行环境及转换依赖   |
+| 目标应用 | Windows 桌面版 Word、PowerPoint |
+| 转换组件 | 本机 Office 的 `MML2OMML.XSL` |
+| .NET | .NET Framework 4.x |
+| 安装权限 | 当前用户权限，通常无需管理员权限 |
+| Python | 安装包内置 x64 Python 运行环境及转换依赖 |
 
 程序会在常见的 Office 安装目录中查找公式转换组件。特殊安装路径可能需要进一步适配。
 
@@ -89,7 +90,8 @@
 6. 输入 `1`，按 Enter 完成安装或更新。
 7. 重新打开 Word 或 PowerPoint，即可使用。
 
-**注意：Office 2016 和 Office 2021 请使用仓库中对应的适配版本，不要混用不同版本的修复文件。**
+> [!WARNING]
+> Office 2016 和 Office 2021 请使用仓库中对应的适配版本，不要混用不同版本的修复文件。
 
 安装程序会将文件复制到当前用户的应用目录，并注册 COM 加载项，通常不需要管理员权限。
 
@@ -117,10 +119,10 @@ install.cmd install
 install.cmd restore
 ```
 
-| 命令                    | 用途         |
-| --------------------- | ---------- |
-| `install.cmd`         | 打开中文菜单     |
-| `install.cmd install` | 安装或更新      |
+| 命令 | 用途 |
+| --- | --- |
+| `install.cmd` | 打开中文菜单 |
+| `install.cmd install` | 安装或更新 |
 | `install.cmd restore` | 恢复首次安装前的状态 |
 
 更新时直接选择 **1** 即可。首次安装前的备份会保留，后续更新沿用这份备份。
@@ -133,7 +135,7 @@ install.cmd restore
 这是一个公式：\(\frac{a}{b}+\sqrt{x}\)。
 ```
 
-预期效果：
+**预期效果：**
 
 正文正常显示，分式和根号转换为 Office 原生公式，可以继续编辑。
 
@@ -167,11 +169,10 @@ P_2(x)=13.45966-3.60531x+0.267571x^2
 
 运行 `install.cmd`，选择 **2**，即可恢复首次使用安装包之前的加载项注册状态，并移除本安装包部署的程序与备份。
 
-> **重要提示**
->
+> [!IMPORTANT]
 > 如果首次安装前已经使用过测试版，还原会恢复测试版的注册信息。请保留这些注册信息指向的旧目录，直到确定不再需要回退。
 
-安装目录：
+### 安装目录
 
 ```text
 %LOCALAPPDATA%\BatterOffice\OfficeMathPastePackage\
@@ -199,21 +200,21 @@ Word 文档 / PowerPoint 文本框
 
 ### 技术组成
 
-| 组件                 | 作用                     |
-| ------------------ | ---------------------- |
-| C# COM 加载项         | 接入 Office，读取剪贴板并插入转换结果 |
-| Python             | 识别、转换和生成临时文档           |
-| latex2mathml       | 将 LaTeX 转换为 MathML     |
-| lxml 与 Office XSLT | 生成 OMML 公式结构           |
-| 常驻转换进程             | 在多次粘贴间复用转换组件           |
+| 组件 | 作用 |
+| --- | --- |
+| C# COM 加载项 | 接入 Office，读取剪贴板并插入转换结果 |
+| Python | 识别、转换和生成临时文档 |
+| latex2mathml | 将 LaTeX 转换为 MathML |
+| lxml 与 Office XSLT | 生成 OMML 公式结构 |
+| 常驻转换进程 | 在多次粘贴间复用转换组件 |
 
 ### 性能测试
 
 开发时使用同一条三重求和公式进行了预热后的 20 次连续测试：
 
-| 转换目标       | 转换耗时中位数   |
-| ---------- | --------- |
-| Word       | 约 6.2 ms  |
+| 转换目标 | 转换耗时中位数 |
+| --- | --- |
+| Word | 约 6.2 ms |
 | PowerPoint | 约 11.5 ms |
 
 以上数据来自开发机的 Turbo 版测试，计时覆盖转换请求到临时文件生成。Office 实际插入、渲染以及首次初始化还会增加耗时，复杂内容的结果也会不同。
@@ -233,15 +234,17 @@ Word 文档 / PowerPoint 文本框
 
 ## 常见问题
 
-\<details>
-\<summary>安装提示 Word 或 PowerPoint 仍在运行\</summary>
+<details>
+<summary>安装提示 Word 或 PowerPoint 仍在运行</summary>
 
-先保存文档并完全退出两个应用，再返回菜单操作。如果窗口已关闭但仍提示运行，可以在任务管理器中检查是否还有相应进程。
+先保存文档并完全退出两个应用，再返回菜单操作。
 
-\</details>
+如果窗口已关闭但仍提示运行，可以在任务管理器中检查是否还有相应进程。
 
-\<details>
-\<summary>Office 提示加载项出现问题，或者粘贴后还是公式代码\</summary>
+</details>
+
+<details>
+<summary>Office 提示加载项出现问题，或者粘贴后还是公式代码</summary>
 
 记录使用的 Office 版本和触发问题的原始公式。
 
@@ -251,23 +254,23 @@ Word 文档 / PowerPoint 文本框
 
 请在反馈中说明是整段复制失败，还是单独复制公式也失败。这有助于定位剪贴板格式和公式解析问题。
 
-\</details>
+</details>
 
-\<details>
-\<summary>第一次粘贴比后续粘贴慢\</summary>
+<details>
+<summary>第一次粘贴比后续粘贴慢</summary>
 
 第一次可能需要等待转换引擎初始化。Turbo 版会复用已启动的引擎，后续粘贴通常更快。
 
-\</details>
+</details>
 
-\<details>
-\<summary>下载安装包后，脚本被 Windows 阻止\</summary>
+<details>
+<summary>下载安装包后，脚本被 Windows 阻止</summary>
 
 先确认安装包来源可信。如果文件属性中有“解除锁定”，可以在解压前解除 ZIP 的下载锁定后重新解压。
 
 单位电脑可能有脚本或加载项管理策略，需要由管理员按组织要求处理。
 
-\</details>
+</details>
 
 ## 反馈与贡献
 
@@ -299,18 +302,6 @@ README 编写参考了 [github-readme-skill](https://github.com/Ricardo-Nima/git
 
 本项目尚未确定统一的开源许可证。第三方组件遵循各自的许可证；项目许可证以仓库最终提供的 LICENSE 文件为准。
 
-> [!IMPORTANT]
-> **项目目前处于快速迭代阶段！**
->
-> 如需使用，请务必前往 GitHub 仓库下载最新的 ZIP 安装包，以获取最新修复与功能更新。
->
-> **请特别注意 Office 版本区分：**
-> - Office 2016：下载 Office 2016 对应版本。
-> - Office 2021：下载 Office 2021 对应版本。
->
-> 不同 Office 版本的修复文件请勿混用。建议每次使用前检查仓库中的最新发布版本。
-
 ---
 
 **让公式粘贴回归简单，让 Office 更好用。**
-
