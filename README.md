@@ -2,7 +2,12 @@
 
 **让 Office 的 Ctrl+V 更聪明：将 LaTeX 数学公式自动转换为可编辑的 Office 原生公式。**
 
-\<div align="center"> \<img alt="Windows x64" src="[https://img.shields.io/badge/Windows-x64-0078D4](https://img.shields.io/badge/Windows-x64-0078D4)"> \<img alt="Office 2016" src="[https://img.shields.io/badge/Office-2016%20%7C%202021-D83B01](https://img.shields.io/badge/Office-2016%20%7C%202021-D83B01)"> \<img alt="版本 Turbo" src="[https://img.shields.io/badge/版本-Turbo-22863A](https://img.shields.io/badge/版本-Turbo-22863A)"> \<img alt="技术 C# 与 Python" src="[https://img.shields.io/badge/技术-C%23%20%2B%20Python-512BD4](https://img.shields.io/badge/技术-C%23%20%2B%20Python-512BD4)"> \</div>
+<div align="center">
+  <img alt="Windows x64" src="https://img.shields.io/badge/Windows-x64-0078D4">
+  <img alt="Office 2016 + 2021" src="https://img.shields.io/badge/Office-2016%20%7C%202021-D83B01">
+  <img alt="版本 Turbo" src="https://img.shields.io/badge/版本-Turbo-22863A">
+  <img alt="技术 C# 与 Python" src="https://img.shields.io/badge/技术-C%23%20%2B%20Python-512BD4">
+</div>
 
 > [!IMPORTANT]
 > **项目目前处于快速迭代阶段！**
