@@ -1,4 +1,4 @@
-# My Better Office
+# OfficeMathPaste
 
 **让 Office 的 Ctrl+V 更聪明：将 LaTeX 数学公式自动转换为可编辑的 Office 原生公式。**
 
@@ -23,7 +23,7 @@
 
 ## 项目介绍
 
-**My Better Office** 是一个面向 Windows 桌面版 Microsoft Word 和 PowerPoint 的公式粘贴增强工具。
+**OfficeMathPaste** 是一个面向 Windows 桌面版 Microsoft Word 和 PowerPoint 的公式粘贴增强工具。
 
 它保留 Office 原有的复制粘贴习惯，只需使用熟悉的 `Ctrl+C` 和 `Ctrl+V`，即可将网页、ChatGPT 回答或 LaTeX 文本中的数学公式转换为 Office 原生公式。
 
